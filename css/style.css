@@ -180,10 +180,11 @@ a#logo:hover {
 
 /* date */
 #main section h2 {
+  clear: both;
   color: #666;
   font-size: 18px;
   float: left;
-  margin: 3px 0 0 0;
+  margin: 0px 0 0 0;
   padding-top: 2px;
   width: 65px;
   border-top: 1px solid;
@@ -217,9 +218,17 @@ a#logo:hover {
   margin: 5px 0 10px 0;
 }
 
+#main section.techtalks h2 {
+  padding-top: 10px;
+}
+
 #main section.techtalks h2 + div {
-  color: red;
-  margin-top: 20px;
+  padding-top: 25px;
+}
+
+#main section.techtalks div {
+  position: relative;
+  top: -25px;
 }
 
 /* FOOTER */
