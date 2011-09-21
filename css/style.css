@@ -11,8 +11,8 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #A4001D; color: #fff; text-shadow: none; }
+::selection { background: #A4001D; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -67,7 +67,7 @@ td { vertical-align: top; }
 
 body {
   font-family: 'Lato', sans-serif;
-  padding: 25px;
+  padding: 30px 50px;
 }
 
 h1,
@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-font-family : adelle, "adelle-1","adelle-2", Georgia, serif;
+font-family : adelle, Georgia, serif;
 font-weight : bold; }
 
 a:link,
@@ -101,7 +101,7 @@ a:active {
 nav {
   float: right;
   font-size: 20px;
-  margin: 20px 40px 0 0;
+  margin: 20px 5px 0 0;
   text-transform: uppercase;
 }
 
@@ -153,24 +153,46 @@ a#logo:hover {
   text-transform: uppercase;
 }
 
-/* CONTENT */
+/* LEAD IN */
 
-#main section {
-  float: left;
-  font-size: 18px;
-  padding-right: 5%;
-  margin-top: 10px;
-  width: 45%;
+#main .leadin {
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  font-family: adelle, adelle-1, adelle-2, Georgia, 'Times New Roman', serif;
+  font-size: 26px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin: 30px 0;
 }
 
-#main section h1 {
+#main .leadin:first-child {
+  margin-top: 50px;
+}
+
+/* CONTENT SECTION */
+
+#main {
+  font-size: 18px;
+}
+
+#main .half {
+  float: left;
+  margin-top: 10px;
+  width: 47%;
+}
+
+#main .half + .half {
+  padding-left: 5%;
+}
+
+#main h1 {
   border-bottom: 4px solid #000;
   font-size: 30px;
   padding-bottom: 3px;
   margin-bottom: 30px;
 }
 
-#main section h1 span {
+#main h1 span {
   display: block;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -178,13 +200,20 @@ a#logo:hover {
   margin: 1px 0 6px 0;
 }
 
+#main h2 {
+  font-size: 22px;
+  margin: 30px 0 10px 0;
+}
+
+/* SCHEDULE */
+
 /* date */
-#main section h2 {
+#main .schedule h2 {
   clear: both;
   color: #666;
   font-size: 18px;
   float: left;
-  margin: 0px 0 0 0;
+  margin: 0;
   padding-top: 2px;
   width: 65px;
   border-top: 1px solid;
@@ -192,43 +221,62 @@ a#logo:hover {
 }
 
 /* speaker/event */
-#main section div {
+#main .schedule div {
   padding-left: 85px;
 }
 
 /* speaker/event name */
-#main section div span:first-child {
-  font-family : adelle, "adelle-1","adelle-2", Georgia, serif;
+#main .schedule div span:first-child {
+  font-family : adelle, Georgia, serif;
   font-weight : bold;
 }
 
 /* speaker title / event location */
-#main section div span:nth-child(2) {
-  color: #999;
+#main .schedule div span:nth-child(2) {
+  color: #666;
   float: right;
 }
 
 /* speaker/event details */
-#main section div p {
+#main .schedule div p {
+  clear: right;
   margin: 5px 0 30px 0;
   text-align: justify;
 }
 
-#main section.techtalks div p {
+#main .schedule.techtalks div p {
   margin: 5px 0 10px 0;
 }
 
-#main section.techtalks h2 {
+#main .schedule.techtalks h2 {
   padding-top: 10px;
 }
 
-#main section.techtalks h2 + div {
+#main .schedule.techtalks h2 + div {
   padding-top: 25px;
 }
 
-#main section.techtalks div {
+#main .schedule.techtalks div {
   position: relative;
   top: -25px;
+}
+
+/* OFFICERS */
+
+#main .officers img {
+  border: 3px solid #000;
+  float: left;
+  height: 200px;
+  margin: 8px 10px 30px 0;
+  width: 150px;
+}
+
+#main .officers h2 {
+  clear: left;
+}
+
+#main .teamofficers img {
+  max-width: 100%;
 }
 
 /* FOOTER */
