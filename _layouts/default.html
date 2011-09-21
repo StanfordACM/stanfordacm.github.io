@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Stanford ACM - {{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="Stanford ACM">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Typekit Fonts -->
+  <script type="text/javascript" src="http://use.typekit.com/coe2brh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- end CSS-->
+
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body id="{{ page.id }}">
+
+  <div id="container">
+    <header class="clearfix" role="header">
+      <a href="http://www.stanfordacm.com" class="clearfix" id="logo" role="logo">
+        <h1>The Stanford ACM</h1>
+        <h2>Association for Computing Machinery</h2>
+      </a>
+
+      <nav>
+        <a href="./past.html">Past events</a> &bull;
+        <a href="./techtalks.html">Speak</a> &bull;
+        <a href="./about.html">Officers</a>
+      </nav>
+    </header>
+
+    <div class="clearfix" id="main" role="main">
+
+      {{ content }}
+
+    </div>
+    <footer>
+      <div class="fb-like" data-href="http://www.facebook.com/stanfordacm" data-send="false" data-layout="box_count" data-width="100" data-show-faces="false"></div>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!-- Facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
