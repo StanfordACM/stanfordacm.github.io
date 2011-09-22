@@ -281,9 +281,42 @@ a#logo:hover {
 
 /* FOOTER */
 
-.fb-like {
+footer {
+  margin-top: 50px;
+}
+
+footer .subscribe {
+  float: left;
+}
+
+footer .subscribe [name="email"] {
+  border-radius: 1px;
+  border: 2px solid #666;
+  font-size: 22px;
+  padding: 5px;
+  width: 350px;
+}
+
+footer .subscribe [type="submit"] {
+  font-size: 25px;
+  padding: 5px;
+  width: 150px;
+  margin: 0 0 15px 15px;
+}
+
+footer .fb-like {
   display: block;
-  width: 50px;
+  float: right;
+  left: -20px;
+  position: relative;
+  top: -20px;
+}
+
+
+
+/* Remove Typekit spam */
+.typekit-badge {
+  display: none !important;
 }
 
 
