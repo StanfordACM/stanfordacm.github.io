@@ -67,7 +67,7 @@ td { vertical-align: top; }
 
 body {
   font-family: 'Lato', sans-serif;
-  padding: 30px 50px;
+  padding: 30px 60px;
 }
 
 h1,
@@ -101,8 +101,10 @@ a:active {
 nav {
   float: right;
   font-size: 20px;
-  margin: 20px 5px 0 0;
+  margin: 20px 40px 0 0;
+  position: relative;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 nav a {
@@ -311,6 +313,15 @@ footer .fb-like {
   position: relative;
   top: -20px;
 }
+
+footer .credit {
+  color: #666;
+  float: right;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+/* MISC */
 
 .oldSite {
   color: #eee;
