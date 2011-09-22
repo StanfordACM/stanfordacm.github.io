@@ -312,7 +312,12 @@ footer .fb-like {
   top: -20px;
 }
 
-
+.oldSite {
+  color: #eee;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 
 /* Remove Typekit spam */
 .typekit-badge {
