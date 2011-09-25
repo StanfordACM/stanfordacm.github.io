@@ -66,7 +66,9 @@ td { vertical-align: top; }
 /* PRIMARY STYLES */
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
   padding: 30px 60px;
 }
 
@@ -148,10 +150,10 @@ a#logo:hover {
 }
 
 #logo h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-family: museo-sans, sans-serif;
+  font-size: 13px;
   font-weight: 300;
-  margin-top: 0;
+  margin-top: 1px;
   text-transform: uppercase;
 }
 
@@ -174,7 +176,7 @@ a#logo:hover {
 /* CONTENT SECTION */
 
 #main {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #main .half {
@@ -196,8 +198,9 @@ a#logo:hover {
 
 #main h1 span {
   display: block;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   font-weight: normal;
   margin: 1px 0 6px 0;
 }
@@ -213,7 +216,7 @@ a#logo:hover {
 #main .schedule h2 {
   clear: both;
   color: #666;
-  font-size: 18px;
+  font-size: 17px;
   float: left;
   margin: 0;
   padding-top: 2px;
@@ -251,7 +254,7 @@ a#logo:hover {
 }
 
 #main .schedule.techtalks h2 {
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 #main .schedule.techtalks h2 + div {
