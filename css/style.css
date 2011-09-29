@@ -103,7 +103,7 @@ a:active {
 nav {
   float: right;
   font-size: 20px;
-  margin: 20px 40px 0 0;
+  margin: 20px 50px 0 0;
   position: relative;
   text-transform: uppercase;
   z-index: 2;
@@ -338,6 +338,12 @@ footer .credit {
   display: none !important;
 }
 
+/* Bold the menu button of the current page */
+#techtalks .techtalks,
+#past .past,
+#about .about {
+  font-weight: bold;
+}
 
 
 /* ==|== non-semantic helper classes ======================================== */
