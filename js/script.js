@@ -1,5 +1,12 @@
 $(function() {
+  addSubscribeHandler();
 
+  if ($('body').attr('id') == 'home') {
+    addDateHighlighter();
+  }
+});
+
+function addSubscribeHandler() {
   $('footer .subscribe').submit(function(e) {
     $('footer .subscribe [type="submit"]').attr('disabled', 'disabled');
 
@@ -29,5 +36,30 @@ $(function() {
     e.stopPropagation();
     return false;
   });
-});
+}
 
+/**
+ * Makes past events (on the homepage) dim, so that we can keep them
+ * there, but make them stand out less.
+ */
+function addDateHighlighter() {
+  var DAY = 1000 * 60 * 60 * 24;
+  var currentYear = (new Date(Date.now())).getFullYear();
+
+  var isPast = false;
+  $('.half h2, .half div').each(function(i, e) {
+    var $e = $(e);
+    if ($e.is('h2')) {
+      isPast = false;
+      var date = Date.parse($e.text() + ', ' + currentYear);
+      if (date < Date.now() - DAY) {
+        $e.addClass('old');
+        isPast = true;
+      }
+    } else {
+      if (isPast) {
+        $e.addClass('old');
+      }
+    }
+  });
+}
