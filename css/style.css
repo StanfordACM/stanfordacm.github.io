@@ -100,10 +100,14 @@ a:active {
 
 /* HEADER */
 
+header {
+  margin-right: 50px;
+}
+
 nav {
   float: right;
   font-size: 20px;
-  margin: 20px 50px 0 0;
+  margin: 20px 0 0 0;
   position: relative;
   text-transform: uppercase;
   z-index: 2;
@@ -181,7 +185,6 @@ a#logo:hover {
 
 #main .half {
   float: left;
-  margin-top: 10px;
   width: 47%;
 }
 
@@ -284,29 +287,34 @@ a#logo:hover {
   max-width: 100%;
 }
 
+/* SUBSCRIBE */
+
+.subscribe {
+  clear: right;
+  display: block;
+  float: right;
+  margin: 20px 14px 0 0;
+}
+
+.subscribe [name="email"] {
+  border-radius: 2px;
+  border: 2px solid #666;
+  font-size: 18px;
+  padding: 5px;
+  width: 240px;
+}
+
+.subscribe [type="submit"] {
+  font-size: 20px;
+  padding: 5px;
+  width: 120px;
+  margin: 0 0 15px 15px;
+}
+
 /* FOOTER */
 
 footer {
   margin-top: 10px;
-}
-
-footer .subscribe {
-  float: left;
-}
-
-footer .subscribe [name="email"] {
-  border-radius: 1px;
-  border: 2px solid #666;
-  font-size: 22px;
-  padding: 5px;
-  width: 350px;
-}
-
-footer .subscribe [type="submit"] {
-  font-size: 25px;
-  padding: 5px;
-  width: 150px;
-  margin: 0 0 15px 15px;
 }
 
 footer .fb-like {
