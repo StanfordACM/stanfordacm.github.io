@@ -242,18 +242,25 @@ a#logo:hover {
 /* speaker title / event location */
 #main .schedule div span:nth-child(2) {
   color: #666;
-  float: right;
+}
+
+#main .schedule div span:nth-child(2):before {
+  content: " <";
+}
+
+#main .schedule div span:nth-child(2):after {
+  content: ">";
 }
 
 /* speaker/event details */
 #main .schedule div p {
   clear: right;
-  margin: 5px 0 30px 0;
+  margin: 5px 0 40px 0;
   text-align: justify;
 }
 
 #main .schedule.techtalks div p {
-  margin: 5px 0 10px 0;
+  margin: 5px 0 15px 0;
 }
 
 #main .schedule.techtalks h2 {
@@ -261,12 +268,12 @@ a#logo:hover {
 }
 
 #main .schedule.techtalks h2 + div {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 #main .schedule.techtalks div {
   position: relative;
-  top: -25px;
+  top: -15px;
 }
 
 /* OFFICERS */
