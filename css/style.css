@@ -245,11 +245,11 @@ a#logo:hover {
 }
 
 #main .schedule div span:nth-child(2):before {
-  content: " <";
+  content: " (";
 }
 
 #main .schedule div span:nth-child(2):after {
-  content: ">";
+  content: ") ";
 }
 
 /* speaker/event details */
@@ -361,7 +361,7 @@ footer .credit {
 }
 
 .old {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 
