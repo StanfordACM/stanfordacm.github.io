@@ -2,7 +2,8 @@ $(function() {
   addSubscribeHandler();
 
   if ($('body').attr('id') == 'home') {
-    addDateHighlighter();
+    addDateHighlighter('.events', 'events');
+    addDateHighlighter('.techtalks', 'speakers');
   }
 });
 
@@ -42,24 +43,43 @@ function addSubscribeHandler() {
  * Makes past events (on the homepage) dim, so that we can keep them
  * there, but make them stand out less.
  */
-function addDateHighlighter() {
+function addDateHighlighter(selector, pastType) {
   var DAY = 1000 * 60 * 60 * 24;
   var currentYear = (new Date(Date.now())).getFullYear();
 
   var isPast = false;
-  $('.half h2, .half div').each(function(i, e) {
+  var numOld = 0;
+  var seenH1 = false;
+  $(selector).children().each(function(i, e) {
     var $e = $(e);
+    if ($e.is('h1')) {
+        if (seenH1) {
+            return false; // we're looking at future quarter events; always show those.
+        }
+        seenH1 = true;
+    }
     if ($e.is('h2')) {
       isPast = false;
       var date = Date.parse($e.text() + ', ' + currentYear);
       if (date < Date.now() - DAY) {
-        $e.addClass('old');
+        $e.addClass('old'); // mark DATE as old
         isPast = true;
       }
     } else {
       if (isPast) {
-        $e.addClass('old');
+        $e.addClass('old'); // mark EVENT as old
+        numOld += 1;
       }
     }
   });
+
+  if (numOld > 0) {
+      var $oldMsg = $('<div class="oldMsg">' + numOld + ' past ' + pastType + '</div>');
+      $oldMsg.click(function(e) {
+          $(selector).find('.old').fadeIn();
+          $(selector).find('.oldMsg').remove();
+      });
+      $(selector).find('h1').first().after($oldMsg);
+  }
+
 }

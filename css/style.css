@@ -163,7 +163,7 @@ a#logo:hover {
 
 /* LEAD IN */
 
-#main .leadin {
+.leadin {
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   font-family: adelle, adelle-1, adelle-2, Georgia, 'Times New Roman', serif;
   font-size: 26px;
@@ -173,7 +173,7 @@ a#logo:hover {
   margin: 30px 0;
 }
 
-#main .leadin:first-child {
+.leadin:first-child {
   margin-top: 50px;
 }
 
@@ -183,12 +183,12 @@ a#logo:hover {
   font-size: 17px;
 }
 
-#main .half {
+.half {
   float: left;
   width: 47%;
 }
 
-#main .half + .half {
+.half + .half {
   padding-left: 5%;
 }
 
@@ -196,7 +196,7 @@ a#logo:hover {
   border-bottom: 4px solid #000;
   font-size: 30px;
   padding-bottom: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #main h1 span {
@@ -229,56 +229,56 @@ a#logo:hover {
 }
 
 /* speaker/event */
-#main .schedule div {
+.schedule div {
   padding-left: 85px;
 }
 
 /* speaker/event name */
-#main .schedule div span:first-child {
+.schedule div span:first-child {
   font-family : adelle, Georgia, serif;
   font-weight : bold;
 }
 
 /* speaker title / event location */
-#main .schedule div span:nth-child(2) {
+.schedule div span:nth-child(2) {
   color: #666;
 }
 
-#main .schedule div span:nth-child(2):before {
+.schedule div span:nth-child(2):before {
   content: " (";
 }
 
-#main .schedule div span:nth-child(2):after {
+.schedule div span:nth-child(2):after {
   content: ") ";
 }
 
 /* speaker/event details */
-#main .schedule div p {
+.schedule div p {
   clear: right;
   margin: 5px 0 40px 0;
   text-align: justify;
 }
 
-#main .schedule.techtalks div p {
+.schedule.techtalks div p {
   margin: 5px 0 15px 0;
 }
 
-#main .schedule.techtalks h2 {
+.schedule.techtalks h2 {
   padding-top: 2px;
 }
 
-#main .schedule.techtalks h2 + div {
+.schedule.techtalks h2 + div {
   padding-top: 15px;
 }
 
-#main .schedule.techtalks div {
+.schedule.techtalks div {
   position: relative;
   top: -15px;
 }
 
 /* OFFICERS */
 
-#main .officers img {
+.officers img {
   border: 3px solid #000;
   float: left;
   height: 200px;
@@ -286,11 +286,11 @@ a#logo:hover {
   width: 150px;
 }
 
-#main .officers h2 {
+.officers h2 {
   clear: left;
 }
 
-#main .half img {
+.half img {
   max-width: 100%;
 }
 
@@ -360,8 +360,28 @@ footer .credit {
   font-weight: bold;
 }
 
+#main .oldMsg {
+  background-color: #EEE;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow:0px 0px 5px #333333;
+  -webkit-box-shadow:0px 0px 5px #333333;
+
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#main .techtalks .oldMsg {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
 .old {
-  opacity: 0.6;
+  opacity: 0.7;
+  display: none;
 }
 
 
