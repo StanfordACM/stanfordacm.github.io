@@ -74,7 +74,7 @@ function addDateHighlighter(selector, pastType) {
   });
 
   if (numOld > 0) {
-      var $oldMsg = $('<div class="oldMsg">' + numOld + ' past ' + pastType + '</div>');
+      var $oldMsg = $('<div class="oldMsg">' + numOld + ' past ' + pastType + ' this quarter</div>');
       $oldMsg.click(function(e) {
           $(selector).find('.old').fadeIn();
           $(selector).find('.oldMsg').remove();
