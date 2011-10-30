@@ -404,8 +404,78 @@ footer .credit {
 
 }
 
+@media only screen and (max-width: 480px) {
+    html body {
+        padding: 30px 20px;
+    }
+
+    nav {
+        font-size: 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .subscribe [name="email"], .subscribe [type="submit"] {
+        width: 175px;
+        font-size: 14px;
+    }
+
+    .subscribe [type="submit"] {
+        width: auto;
+        padding: 7px 10px;
+        margin-left: 10px;
+    }
+
+    #github {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 30px 40px;
+    }
+
+    header {
+        margin-right: 0;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    nav {
+        clear: both;
+        padding-top: 20px;
+    }
+
+    nav, .subscribe {
+        float: none;
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+
+    #main .schedule h2 {
+        float: none;
+        border-top: none;
+        padding-bottom: 10px;
+    }
+    
+    .schedule div {
+        padding-left: 0;
+    }
+    
+    .half + .half {
+        padding-left: 0;
+    }
 }
 
 
@@ -426,3 +496,4 @@ footer .credit {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
