@@ -354,10 +354,11 @@ footer .credit {
 
 #main .oldMsg {
   cursor: pointer;
+  border-bottom: 1px dotted #999;
 }
 
 #main .oldMsg:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 
 .old {
