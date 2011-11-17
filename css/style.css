@@ -106,7 +106,7 @@ header {
 
 nav {
   float: right;
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0 0 0;
   position: relative;
   text-transform: uppercase;
@@ -193,44 +193,53 @@ a#logo:hover {
 }
 
 #main h1 {
-  border-bottom: 4px solid #000;
+  border-bottom: 3px solid #000;
   font-size: 30px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   margin-bottom: 20px;
 }
 
 #main h1 span {
+  color: #666;
   display: block;
   font-family: museo-sans, sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: normal;
-  margin: 1px 0 6px 0;
+  margin: 0 0 6px 0;
 }
 
 #main h2 {
   font-size: 22px;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 20px 0;
+  border-bottom: 1px dashed #666;
+  padding-bottom: 3px;
+}
+
+#main h2 span {
+  color: #666;
+  display: block;
+  float: right;
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 1px 0 6px 0;
 }
 
 /* SCHEDULE */
 
 /* date */
-#main .schedule h2 {
-  clear: both;
-  color: #666;
+#main .schedule time {
+  color: #999;
+  display: block;
   font-size: 17px;
-  float: left;
-  margin: 0;
-  padding-top: 2px;
-  width: 65px;
-  border-top: 1px solid;
-  border-top-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin: 20px 0 10px 0;
 }
 
-/* speaker/event */
-.schedule div {
-  padding-left: 85px;
+#main .schedule time:before {
+  content: "";
 }
 
 /* speaker/event name */
@@ -255,25 +264,8 @@ a#logo:hover {
 /* speaker/event details */
 .schedule div p {
   clear: right;
-  margin: 5px 0 40px 0;
-  text-align: justify;
-}
-
-.schedule.techtalks div p {
   margin: 5px 0 15px 0;
-}
-
-.schedule.techtalks h2 {
-  padding-top: 2px;
-}
-
-.schedule.techtalks h2 + div {
-  padding-top: 15px;
-}
-
-.schedule.techtalks div {
-  position: relative;
-  top: -15px;
+  text-align: justify;
 }
 
 /* OFFICERS */
@@ -294,16 +286,16 @@ a#logo:hover {
   max-width: 100%;
 }
 
-/* SUBSCRIBE */
+/* SUBSCRIBE BOX */
 
-.subscribe {
+.subscribeBox {
   clear: right;
-  display: block;
+  display: none;
   float: right;
   margin: 20px 14px 0 0;
 }
 
-.subscribe [name="email"] {
+.subscribeBox [name="email"] {
   border-radius: 2px;
   border: 2px solid #666;
   font-size: 18px;
@@ -311,7 +303,7 @@ a#logo:hover {
   width: 240px;
 }
 
-.subscribe [type="submit"] {
+.subscribeBox [type="submit"] {
   font-size: 20px;
   padding: 5px;
   width: 120px;
@@ -361,27 +353,15 @@ footer .credit {
 }
 
 #main .oldMsg {
-  background-color: #EEE;
-  border-radius: 2px;
-  box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow:0px 0px 5px #333333;
-  -webkit-box-shadow:0px 0px 5px #333333;
-
   cursor: pointer;
-  font-size: 15px;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
-#main .techtalks .oldMsg {
-  margin-top: 35px;
-  margin-bottom: 10px;
+#main .oldMsg:hover {
+  text-decoration: underline;
 }
 
 .old {
   opacity: 0.7;
-  display: none;
 }
 
 
@@ -410,19 +390,15 @@ footer .credit {
     }
 
     nav {
-        font-size: 15px;
+      font-size: 15px;
     }
 
-    nav a {
-        margin: 0 5px;
-    }
-
-    .subscribe [name="email"], .subscribe [type="submit"] {
+    .subscribeBox [name="email"], .subscribeBox [type="submit"] {
         width: 175px;
         font-size: 14px;
     }
 
-    .subscribe [type="submit"] {
+    .subscribeBox [type="submit"] {
         width: auto;
         padding: 7px 10px;
         margin-left: 10px;
@@ -453,26 +429,22 @@ footer .credit {
     nav {
         clear: both;
         padding-top: 20px;
+        font-size: 16px;
     }
 
-    nav, .subscribe {
+    nav a {
+        margin: 0 5px;
+    }
+
+    nav, .subscribeBox {
         float: none;
+        text-align: center;
     }
 
     nav a:first-child {
         margin-left: 0;
     }
 
-    #main .schedule h2 {
-        float: none;
-        border-top: none;
-        padding-bottom: 10px;
-    }
-    
-    .schedule div {
-        padding-left: 0;
-    }
-    
     .half + .half {
         padding-left: 0;
     }
