@@ -10,6 +10,7 @@ $(function() {
 function addSubscribeHandler() {
   $('.subscribe').click(function(e) {
     $('.subscribeBox').slideDown();
+    e.preventDefault();
   });
 
   $('.subscribeBox').submit(function(e) {
