@@ -56,7 +56,7 @@ function addDateHighlighter(selector, pastType) {
 
   var helper = function() {
     if (numOld > 0) {
-      var $oldMsg = $('<span class="oldMsg">Show <strong>'+numOld+'</strong> past '+pastType+' this quarter</span>');
+      var $oldMsg = $('<span class="oldMsg">Show <strong>'+numOld+'</strong> past '+pastType+' this quarter...</span>');
       var $quarterEvents = $(selector).find('[data-year='+currentYear+']');
 
       $oldMsg.click(function(e) {
