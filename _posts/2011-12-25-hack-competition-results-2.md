@@ -25,7 +25,7 @@ FireShark lets you sniff packets on an open WiFi network. Instead of just steali
 
 The ability to encode and decode images and messages into images. Great use of cryptography.
 
-**Community Crate** – 3rd place
+**Community Crate** – 3rd place - Karthik Viswanathan & Evan Shieh & Ayush Sood
 
 The missing link between Facebook and Dropbox. Send large files to your friends.
 
@@ -49,11 +49,11 @@ Allows a group to decide where to eat based on the preferences of the members.
 
 **SuperGoose**
 
-Allowed you to get cumulative data about how active you are. Provides notifications on when to exercise. Used GreenGoose technology to sense exercise regiems.
+Allowed you to get cumulative data about how active you are. Provides notifications on when to exercise. Used GreenGoose technology to sense exercise regimens.
 
 **Haiku Generator**
 
-Andriod app that randomly generates a Haiku.
+Android app that randomly generates a Haiku.
 
 **Book Pimp**
 
