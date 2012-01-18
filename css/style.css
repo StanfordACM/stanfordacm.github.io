@@ -282,6 +282,10 @@ a#logo:hover {
   clear: left;
 }
 
+.officers p {
+  padding-top: 5px;
+}
+
 .half img {
   max-width: 100%;
 }
