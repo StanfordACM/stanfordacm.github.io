@@ -317,22 +317,34 @@ a#logo:hover {
 /* FOOTER */
 
 footer {
-  margin-top: 10px;
+  border-top: 1px solid #999;
+  margin-top: 20px;
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+footer .twitter {
+  position: absolute;
+  left: 50px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 120px;
 }
 
 footer .fb-like {
-  display: block;
-  float: right;
-  left: -20px;
-  position: relative;
-  top: -20px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
 }
 
 footer .credit {
   color: #666;
-  float: right;
+  display: inline-block;
   font-size: 14px;
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 /* MISC */
@@ -452,6 +464,15 @@ footer .credit {
 
     .half + .half {
         padding-left: 0;
+    }
+
+    footer .twitter, footer .fb-like {
+      position: static;
+      left: auto;
+    }
+
+    footer .credit {
+      margin-top: 20px;
     }
 }
 
