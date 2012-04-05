@@ -17,9 +17,9 @@ It was a blast! There were a total of 44 teams of up to 4 registered. Over 12 ho
 
 ## The winners:
 
-**Fireshark** – 1st place - Feross Aboukhadijeh & John Hiesey & Daniel Posch & Nikil Viswanathan
+**WireSheep** – 1st place - Feross Aboukhadijeh & John Hiesey & Daniel Posch & Nikil Viswanathan
 
-FireShark lets you sniff packets on an open WiFi network. Instead of just stealing login cookies, like Firesheep, it lets you see traffic in realtime, like Wireshark. FireShark shows you each user on the network and all the HTTP requests they’re making. Check out the code: [Github](https://github.com/feross/fireshark)
+WireSheep lets you sniff packets on an open WiFi network. Instead of just stealing login cookies, like Firesheep, it lets you see traffic in realtime, like Wireshark. FireShark shows you each user on the network and all the HTTP requests they’re making. Check out the code: [Github](https://github.com/feross/WireSheep)
 
 **Digital Steganography** – 2nd place
 
