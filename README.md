@@ -1,4 +1,4 @@
-MIT Liscense
+MIT License
 ------------
 
 Copyright (c) 2011-2012 Stanford ACM
