@@ -349,13 +349,6 @@ footer .credit {
 
 /* MISC */
 
-.oldSite {
-  color: #eee;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
 /* Remove Typekit spam */
 .typekit-badge {
   display: none !important;
