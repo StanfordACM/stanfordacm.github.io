@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Addepar + ACM Winter Hackathon</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+<style>
+
+/* STRUCTURE */
+body{
+color:#111;
+}
+#wrapper {
+width:960px;
+margin:0 auto;
+}
+
+/* TAB NAV */
+#tabs {
+width:960px;
+height:60px;
+margin:0 auto;
+font:bold 30px "Trebuchet MS","Helvetica Neue",sans-serif;
+text-align:center;
+}
+#tabs a {
+display:inline-block;
+height:50px;
+color:#111;
+}
+#tabs a:hover, #tabs a.active {
+text-decoration:none;
+border-bottom:4px solid #e00;
+}
+
+/* TAB CONTENT */
+.tab-content{
+overflow:visible;
+width:100%;
+position:relative;
+font:bold 20px "Trebuchet MS","Helvetica Neue",sans-serif;
+}
+.tab-content > .tab-pane {
+display:block;
+opacity:0;
+position:absolute;
+width:960px;
+}
+h1{
+font:bold 70px "Trebuchet MS","Helvetica Neue",sans-serif;
+letter-spacing:-6px;
+margin:20px;
+color:black;
+}
+a span{
+display:none;
+text-decoration:none;
+}
+
+/* SPECIFIC TABS */
+/*#contact {
+position:absolute;
+top:80px;
+left:260px;
+}
+#contact a {
+display:block;
+font:16px/20px Consolas,"Courier New",monospace;
+}
+
+#projects h2{
+display:block;
+position:absolute;
+right:0;
+top:45px;
+font-size:40px;
+text-align:right;
+letter-spacing:-2px;
+}
+#projects a {
+display:inline-block;
+float:left;
+width:200px;
+height:200px;
+padding:20px;
+background:#ddd;
+}
+#projects a:hover {
+background:#fff;
+}*/
+
+#judges h2 {
+font-size:60px;
+}
+
+#logos {
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="wrapper">
+<h1>Stanford ACM Winter Hackathon</h1>
+
+<!-- TABS -->
+<div id="tabs" class="row">
+<a href="#home"        data-toggle="tab" class="span4">Schedule</a>
+<a href="#judges"      data-toggle="tab" class="span4">Awards</a>
+<a href="#projects" data-toggle="tab" class="span4">Projects</a>
+</div>
+
+<!-- CONTENT -->
+<div class="tab-content">
+<div id="home" class="tab-pane" style="opacity:1">
+    <div class="row">
+    <span class="span6">
+        <img src="img/getyourhackon.png"></img>
+    </span>
+    <span class="offset1 span5">
+        <h2>Jan 12-13 in Huang</h2>
+        <h3>Saturday, Jan 12</h3>
+        <div class="row"><span class="span3">Kickoff</span><span class="span2">3:00 pm</span></div>
+        <div class="row gray"><span class="span3">Dinner (prob. Chipotle)</span><span class="span2">6:30 pm</span></div>
+        <h3>Sunday, Jan l3</h3>
+        <div class="row gray"><span class="span3">Midnight Korean BBQ</span><span class="span2">12:00 am</span></div>
+        <div class="row"><span class="span3">Optional Mini-demos</span><span class="span2">12:30 am</span></div>
+        <div class="row gray"><span class="span3">Breakfast</span><span class="span2">8:30 am</span></div>
+        <div class="row gray"><span class="span3">Lunch</span><span class="span2">12:30 pm</span></div>
+        <div class="row"><span class="span3">Demo Presentations</span><span class="span2">3:00 pm</span></div>
+        <div class="row"><span class="span3">Awards</span><span class="span2">4:00 pm</span></div>
+    </span>
+    </div>
+    
+    <div class="row" id="logos">
+    <span class="span4">
+    <br />
+    <br />
+    <a href="http://svihackspace.com/"><img src="img/logo/svi.png"></a>
+    </span>
+    <span class="span4">
+    <a href="http://addepar.com"><img src="img/logo/addepar.png"></a>
+    </span>
+    <span class="span4">
+    <br />
+    <br />
+    <a href="http://bases.stanford.edu/"><img src="img/logo/bases.png"></a>
+    </span>
+    </div>
+</div>
+
+<div id="judges" class="tab-pane">
+    <div class="row">
+    <span class="span7">
+    <h2>Panel</h2>
+    <p>
+        <img src="img/joe-lonsdale.jpg" alt="Joe Lonsdale" style="float:right;"></img>
+        <h3><em>Joe Lonsdale</em></h3> 
+        Joe graduated Stanford Computer Science in 2003. 
+        He cofounded Palantir and a new VC Fund, Formation 8. He's the founder and CEO of Addepar.
+    </p>
+    </span>
+    <span class="offset1 span4">
+    <h2>Prizes</h2>
+    <h3><em>Luck, be a lady</em></h3>
+    The winning team will get round-trip plane tickets to Las Vegas.
+    <h3><em>Thinner and ligher</em></h3>
+    We're bringing iPad Minis for the second winning project.
+    <h3><em>Surprise...</em></h3>
+    <p>The remaining prizes will be revealed after the demo presentations.</p>
+    </span>
+    </div>
+
+</div>
+<div id="projects" class="tab-pane">
+    <h2>Projects</h2>
+    <p>In the spirit of open collaboration, each team is encouraged to use a public Github repo for their hackathon project. 
+       After the contest, we'll link to every project with a public repo on this page.</p>
+
+    <p>Until then...</p>
+    <div class="span6">
+    <h3>Open-source hacker tools</h3>
+    <div><a href="http://d3js.org/">D3</a></div>
+    <div><a href="http://emberjs.com/">Ember.js</a></div>
+    <div><a href="https://github.com/Addepar/ember-table">Ember Table</a></div>
+    <div><a href="http://square.github.com/">Crossfilter</a></div>
+    <div><a href="http://mrdoob.github.com/three.js/">Three.js</a></div>
+    </div>
+    <div class="span6">
+    <h3>Hacker blogs</h3>
+    <div><a href="http://feross.org/">Feross</a></div>
+    <div><a href="http://jacquesmattheij.com/">Jacques Mattheij</a></div>
+    <div><a href="http://24ways.org/2012/how-to-make-your-site-look-half-decent/">Make a cool-looking site in 30m</a></div>
+    <div><a href="http://solarcar.stanford.edu/blog/">Stanford Solar Car Project</a></div>
+    <div><a href="http://dcurt.is/">Dustin Curtis</a></div>
+    <div><a href="https://twitter.com/notch">Notch</a></div>
+    </div>
+
+    <!--
+    <h2 id="projtext"> </h2>
+    <div id="projects">
+    <a href="http://addepar.com"><img src="img/addeparb.png"></img><span>Reinventing Finance. Join us...</span></a>
+    <a href="/d3gl"><img src="img/d3gl_trans.png"></img><span>D3 for spatial data</span></a>
+    <a href="http://solarcar.stanford.edu"><img src="img/shellpowerb.png"></img><span>The Solar Car Project</span></a>
+    <a href="http://github.com/dcposch"><img src="img/octocat.png"></img><span>my github</span></a>
+    <a href="http://cs198.stanford.edu"><img src="img/karel_trans.png"></img><span>apply to section lead</span></a>
+    <a href="http://badassplanes.tumblr.com"><img src="img/sr71b.png"></img><span>a blog about planes</span></a>
+    <a href="http://stanfordacm.com/"><img src="img/stanfordacm_trans.png"></img><span>Addepar|ACM Hackathon</span></a>
+    <a href="http://stanford.edu/~dcposch/resume"><img src="img/stanfordcs_trans.png"></img><span>my resum&eacute;</span></a>
+    </div> -->
+</div>
+</div> <!-- tab-content -->
+</div> <!-- wrapper -->
+
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+// TABS
+var sel;
+$(function(){
+    sel = $("#tabs a")[0];
+    $(sel).addClass("active");
+    $("#tabs a").click(function(evt){
+        evt.preventDefault();
+        if(sel==this)return;
+        moveToTab(
+            sel .href.substring(sel .href.indexOf("#")),
+            this.href.substring(this.href.indexOf("#")));
+        $(sel).removeClass("active");
+        $(sel = this).addClass("active");
+    });
+});
+function moveToTab(oldHash, newHash){
+    var panes = $("div.tab-pane").toArray();
+    var oldIx = panes.indexOf($(oldHash)[0]);
+    var newIx = panes.indexOf($(newHash)[0]);
+    if(oldIx < 0 || newIx < 0 || oldIx == newIx) throw "wat?";
+    var w = $(".tab-content").width();
+    var cssl = {opacity:0.0,left:(-w)+"px"};
+    var css = {opacity:1.0,left:0};
+    var cssr = {opacity:0.0,left:w+"px"};
+    if(oldIx < newIx){
+        $(newHash).css(cssr).animate(css, "fast");
+        $(oldHash).animate(cssl, "fast");
+    } else {
+        $(newHash).css(cssl).animate(css, "fast");
+        $(oldHash).animate(cssr, "fast");
+    }
+}
+
+// PROJECT DESCRIPTIONS
+$(function(){
+    $("a").hover(function(){
+        $("#projects h2").text($(this).find("span").text()); 
+    });
+    $("#wrapper").mouseleave(function(){
+        $("#projects h2").text("");
+    });
+});
+</script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+</body>
+</html>
