@@ -1,308 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Addepar + ACM Winter Hackathon</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+---
+layout: default
+title: The Big Hack 2013
+id: bighack
+---
 
-<style>
+<section class="leadin">
+  The Big Hack is a friendly competitive annual 24-hour hackathon between Berkeley and Stanford. This year it is going to be in the basement of the Huang Engineering building from April 6th to the 7th, 2013.
+</section>
 
-/* STRUCTURE */
-body{
-color:#111;
-overflow-x:hidden;
-}
-#wrapper {
-width:960px;
-margin:0 auto;
-}
-img {
-margin:5px;
-}
-h1{
-/*font:bold 60px "Trebuchet MS","Helvetica Neue",sans-serif;
-letter-spacing:-1px;
-margin:20px;
-color:black;*/
-display:block;
-width:960px;
-height:80px;
-background:url(img/acm-hackathon-header.png) top left no-repeat;
-}
+<section class="poster half">
+  <img src="poster.jpg" alt="Poster" style="margin: 0 auto;"/>
+</section>
 
-/* TAB NAV */
-#tabs {
-width:960px;
-height:60px;
-margin:0 auto;
-font:bold 30px "Trebuchet MS","Helvetica Neue",sans-serif;
-text-align:center;
-}
-#tabs a {
-display:inline-block;
-height:45px;
-color:#111;
-margin-bottom:5px;
-}
-#tabs a:hover {
-text-decoration:none;
-border-bottom:1px solid #e00;
-}
-#tabs a.active {
-text-decoration:none;
-border-bottom:4px solid #e00;
-}
-a.calltoaction{
-font-size:1.2em;
-color:#e00;
-}
-
-/* TAB CONTENT */
-.tab-content{
-overflow:visible;
-width:100%;
-position:relative;
-font:bold 20px "Trebuchet MS","Helvetica Neue",sans-serif;
-}
-.tab-content > .tab-pane {
-display:block;
-opacity:0;
-left:10000px;
-position:absolute;
-width:960px;
-}
-.date {
-text-align:right;
-}
-a span{
-display:none;
-text-decoration:none;
-}
-
-/* SPECIFIC TABS */
-/*#contact {
-position:absolute;
-top:80px;
-left:260px;
-}
-#contact a {
-display:block;
-font:16px/20px Consolas,"Courier New",monospace;
-}
-
-#projects h2{
-display:block;
-position:absolute;
-right:0;
-top:45px;
-font-size:40px;
-text-align:right;
-letter-spacing:-2px;
-}
-#projects a {
-display:inline-block;
-float:left;
-width:200px;
-height:200px;
-padding:20px;
-background:#ddd;
-}
-#projects a:hover {
-background:#fff;
-}*/
-
-#judges h2 {
-font-size:60px;
-}
-
-#logos {
-text-align:center;
-}
-
-</style>
-
-</head>
-<body>
-
-<!-- HEADER -->
-<div id="wrapper">
-<h1>&nbsp;</h1>
-
-<!-- TABS -->
-<div id="tabs" class="row">
-<a href="#projects" data-toggle="tab" class="span4">Congratulations!</a>
-<a href="#home"        data-toggle="tab" class="span4">Schedule</a>
-<a href="#judges"      data-toggle="tab" class="span4">Judges</a>
-</div>
-
-<!-- CONTENT -->
-<div class="tab-content">
-<div id="projects" class="tab-pane" style="opacity:1;left:0">
-    <p>The Winter Hackathon is over. We were impressed with the results!</p>
-    <p>In keeping with the theme, most of the projects were open source.</p> 
-
-    <h3>Repository links</h3>
-    <p>
-    <div>First place &mdash; <a href="https://github.com/feross/cctv.js">CCTV.js</a></div>
-    <div>Second place &mdash; Phone++</div>
-    <div>Third place &mdash; <a href="https://github.com/vipasu/Piclet">Piclet</a></div>
-    </p>
-
-    <p>
-    <div><a href="https://github.com/howonlee/FKIT">F-kit: The Object Flow Game</a></div>
-    <div><a href="https://github.com/arokem/team_gaba">Neuroscience (Team GABA)</a></div>
-    <div><a href="https://github.com/johnfn/Fathom">Fathom</a></div>
-    <div><a href="http://github.com/jiwonkim/d3gl">D3GL d3.gl.models()</a></div>
-    <div><a href="https://github.com/jamesgpainter/mlbjetlag">MLB Jet Lag Visualizer</a></div>
-    </p>
-    If your project is missing from this page, let me know! Email dcposch at stanford...
-
-    <!-- FOOTER -->
-    <div class="row" id="logos">
-        <span class="span4"><br/><br/><br/><a href="http://svihackspace.com/"><img src="img/logo/svi.png"></a></span>
-        <span class="span4"><a href="http://addepar.com"><img src="img/logo/addepar.png"></a></span>
-        <span class="span4"><br/><br/><br/><a href="http://bases.stanford.edu/"><img src="img/logo/bases.png"></a></span>
-    </div>
-</div>
-
-<div id="home" class="tab-pane">
-    <div class="row">
-    <span class="span6">
-        <img src="img/getyourhackon.png"></img>
-    </span>
-    <span class="offset1 span5">
-        <h2>Jan 12-13 in Huang</h2>
-        <h3>Saturday, Jan 12</h3>
-        <div class="row"><span class="span3">Kickoff</span><span class="span2 date">3:00 pm</span></div>
-        <div class="row gray"><span class="span3">Dinner (prob. Chipotle)</span><span class="span2 date">6:30 pm</span></div>
-        <h3>Sunday, Jan l3</h3>
-        <div class="row gray"><span class="span3">Midnight Korean BBQ</span><span class="span2 date">12:00 am</span></div>
-        <div class="row"><span class="span3">Optional Mini-demos</span><span class="span2 date">12:30 am</span></div>
-        <div class="row gray"><span class="span3">Breakfast</span><span class="span2 date">8:30 am</span></div>
-        <div class="row gray"><span class="span3">Lunch</span><span class="span2 date">12:30 pm</span></div>
-        <div class="row"><span class="span3">Demo Presentations</span><span class="span2 date">3:00 pm</span></div>
-        <div class="row"><span class="span3">Awards</span><span class="span2 date">4:00 pm</span></div>
-        <h3><a class="calltoaction" href="https://www.facebook.com/events/468488989853320/">Click to Join Us!</a></h3>
-    </span>
-    </div>
-
-<!-- FOOTER -->
-<div class="row" id="logos">
-    <span class="span4"><br/><br/><br/><a href="http://svihackspace.com/"><img src="img/logo/svi.png"></a></span>
-    <span class="span4"><a href="http://addepar.com"><img src="img/logo/addepar.png"></a></span>
-    <span class="span4"><br/><br/><br/><a href="http://bases.stanford.edu/"><img src="img/logo/bases.png"></a></span>
-</div>
-</div>
-
-<div id="judges" class="tab-pane">
-    <div class="row">
-    <span class="span7">
-    <h2>Panel</h2>
-    <p>
-        <img src="img/joe-lonsdale.jpg" alt="Joe Lonsdale" style="float:right;"></img>
-        <h3><em>Joe Lonsdale</em></h3> 
-        Joe graduated Stanford Computer Science in 2003. 
-        He cofounded Palantir and a new VC Fund, Formation 8. He's the founder and CEO of Addepar.
-        <div style="clear:both">&nbsp;</div>
-
-        <img src="img/cameron.jpg" alt="Cameron Teitelman" style="float:left;"></img>
-        <h3><em>Cameron Teitelman</em></h3> 
-        While studying at Stanford, Cameron founded SSE Ventures, now known as StartX.
-        Through StartX, he has helped more than 90 student startups develop and grow.
-        <div style="clear:both">&nbsp;</div>
-
-        <img src="img/patg.jpg" style="float:right;"></img>
-        <h3><em>Pat Gallagher</em></h3>
-        Pat is the cofounder of CrunchFund, together with Michael Arrington and MG Siegler. The fund focuses on seed and early-stage technology investments.
-        <div style="clear:both">&nbsp;</div>
-
-        <img src="img/tom-dale.jpg" style="float:left;"></img>
-        <h3><em>Tom Dale</em></h3>
-        Tom Dale is a core contributor to the Ember.js Javascript framework. He cofounded Tilde and lives in San Fransisco.
-        <div style="clear:both">&nbsp;</div>
-
-        <img src="img/yehuda-katz.jpg" style="float:right;"></img>
-        <h3><em>Yehuda Katz</em></h3>
-        Yehuda is also a core developer of Ember.js as well as Ruby on Rails and jQuery. He is the author of <em>jQuery in Action</em> and many extraordinary contributions to open-source software.
-        <div style="clear:both">&nbsp;</div>
-
-    </p>
-    </span>
-    <span class="offset1 span4">
-    <h2>Prizes</h2>
-    <h3><em>Luck, be a lady</em></h3>
-    The winning team will get round-trip plane tickets to Las Vegas.
-    <h3><em>Thinner and lighter</em></h3>
-    We're bringing iPad Minis for the second winning project.
-    <h3><em>Surprise...</em></h3>
-    <p>The remaining prizes will be revealed after the demo presentations.</p>
-    </span>
-    </div>
-
-<!-- FOOTER -->
-<div class="row" id="logos">
-    <span class="span4"><br/><br/><br/><a href="http://svihackspace.com/"><img src="img/logo/svi.png"></a></span>
-    <span class="span4"><a href="http://addepar.com"><img src="img/logo/addepar.png"></a></span>
-    <span class="span4"><br/><br/><br/><a href="http://bases.stanford.edu/"><img src="img/logo/bases.png"></a></span>
-</div>
-
-</div>
-
-
-
-
-</div> <!-- tab-content -->
-
-
-</div> <!-- wrapper -->
-
-<script type="text/javascript" src="//code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-// TABS
-var sel;
-$(function(){
-    sel = $("#tabs a")[0];
-    $(sel).addClass("active");
-    $("#tabs a").click(function(evt){
-        evt.preventDefault();
-        if(sel==this)return;
-        moveToTab(
-            sel .href.substring(sel .href.indexOf("#")),
-            this.href.substring(this.href.indexOf("#")));
-        $(sel).removeClass("active");
-        $(sel = this).addClass("active");
-    });
-});
-function moveToTab(oldHash, newHash){
-    var panes = $("div.tab-pane").toArray();
-    var oldIx = panes.indexOf($(oldHash)[0]);
-    var newIx = panes.indexOf($(newHash)[0]);
-    if(oldIx < 0 || newIx < 0 || oldIx == newIx) throw "wat?";
-    var w = $(".tab-content").width();
-    var cssl = {opacity:0.0,left:(-w)+"px"};
-    var css = {opacity:1.0,left:0};
-    var cssr = {opacity:0.0,left:w+"px"};
-    if(oldIx < newIx){
-        $(newHash).css(cssr).animate(css, "fast");
-        $(oldHash).animate(cssl, "fast");
-    } else {
-        $(newHash).css(cssl).animate(css, "fast");
-        $(oldHash).animate(cssr, "fast");
-    }
-}
-
-// PROJECT DESCRIPTIONS
-$(function(){
-    $("a").hover(function(){
-        $("#projects h2").text($(this).find("span").text()); 
-    });
-    $("#wrapper").mouseleave(function(){
-        $("#projects h2").text("");
-    });
-});
-</script>
-<!--<script src="js/bootstrap.min.js"></script>-->
-
-</body>
-</html>
+<section class="details half">
+  <p>What: A massive hackathon between Stanford and Cal <br />
+  When: April 6th-7th from 1PM to 1pm <br />
+  Where: Basement of Huang Engineering, Stanford
+  </p>
+  <h2>Schedule:</h2>
+  <ul>
+    <li>Saturday:</li>
+    <li>
+      <ul>
+        <li>12PM - Cal Buses Arrive</li>
+        <li>1PM - Lunch/Hackathon Begins!</li>
+        <li>7PM - Dinner</li>
+        <li>12PM - Midnight BBQ</li>
+      </ul>
+    </li>
+    <li>Sunday</li>
+    <li>
+      <ul>
+        <li>8AM - Breakfast is Served</li>
+        <li>12PM - Lunch is Served</li>
+        <li>1PM - Hackathon Ends</li>
+        <li>1.30PM - Demos Begin</li>
+        <li>4PM - Winners Announced</li>
+      </ul>
+    </li>
+  </ul>
+</section>
