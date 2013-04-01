@@ -134,7 +134,7 @@ nav a:active {
   color: #333;
   float: left;
   letter-spacing: 1px;
-  padding-left: 55px;
+  padding: 5px 0 5px 55px;
 }
 
 #logo:hover {
@@ -148,12 +148,13 @@ a#logo:hover {
   text-decoration: none;
 }
 
-#logo h1 {
+header h1 {
   font-size: 20px;
   margin-bottom: 0;
 }
 
-#logo h2 {
+#logo span {
+  display: block;
   font-family: museo-sans, sans-serif;
   font-size: 13px;
   font-weight: 300;
