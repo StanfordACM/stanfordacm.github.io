@@ -1,121 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html>
 
-  <title>Stanford ACM - {{ page.title }}</title>
-  <meta name="description" content="The Stanford chapter of the ACM currently has 400+ members. We serve the Stanford community by planning and organizing numerous industry, academic, and social events each quarter.">
-  <meta name="author" content="Stanford ACM">
+  {% include head.html %}
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <body>
 
-  <!-- Typekit Fonts -->
-  <script type="text/javascript" src="http://use.typekit.com/coe2brh.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    {% include header.html %}
 
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-
-  <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- end CSS-->
-
-  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
-</head>
-
-<body id="{{ page.id }}">
-
-  <div id="container">
-    <header class="clearfix" role="header">
-      <h1>
-        <a href="/" class="clearfix" id="logo" role="logo">
-          The Stanford ACM
-          <span>Association for Computing Machinery</span>
-        </a>
-      </h1>
-
-      <nav>
-        <a class="subscribe" href="#">Subscribe</a> &bull;
-        <!-- TODO: Put this back <a class="techtalks" href="/techtalks/">Speak</a> &bull; -->
-        <a class="about" href="/about/">What&nbsp;is&nbsp;ACM?</a> &bull;
-        <a class="past" href="/past/">Past</a>
-
-      </nav>
-
-      <form class="subscribeBox">
-        <input name="email" type="email" spellcheck="false" placeholder="Subscribe to Email Updates" />
-        <input name="submit" type="submit" value="Subscribe" />
-      </form>
-
-    </header>
-
-    <div class="clearfix" id="main" role="main">
-
+    <div class="page-content">
       {{ content }}
-
     </div>
-    <footer class="clearfix">
 
-      <div class="fb-like" data-href="http://www.facebook.com/stanfordacm" data-send="false" data-layout="box_count" data-width="55" data-show-faces="false"></div>
+    <!-- Borrowed scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-      <div class="twitter"><a href="https://twitter.com/StanfordACM" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @StanfordACM</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+    <!-- Our scripts -->
+    <script src="/js/script.js"></script>
+  </body>
 
-      <div class="credit">
-        &copy; Stanford ACM chapter. Design by <a href="http://www.feross.org">Feross</a>.
-        <br><br> Subscribe to event calendar:
-
-        <a href="https://www.google.com/calendar/feeds/bvnapf032e4r1k3jd4tp2649lg%40group.calendar.google.com/public/basic">
-          <img src="/img/xml.gif" alt="XML">
-        </a>
-        <a href="https://www.google.com/calendar/ical/bvnapf032e4r1k3jd4tp2649lg%40group.calendar.google.com/public/basic.ics">
-          <img src="/img/ical.gif" alt="iCal">
-        </a>
-        <a href="https://www.google.com/calendar/embed?src=bvnapf032e4r1k3jd4tp2649lg%40group.calendar.google.com&amp;ctz=America/Los_Angeles">
-          <img src="/img/html.gif" alt="HTML">
-        </a>
-      </div>
-
-    </footer>
-  </div> <!--! end of #container -->
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="/js/plugins.js"></script>
-  <script defer src="/js/script.js"></script>
-  <!-- end scripts-->
-
-  <!-- Facebook -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-
-  <script>
-    window._gaq = [['_setAccount','UA-13118040-1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-
-</body>
 </html>
