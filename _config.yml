@@ -1,3 +1,12 @@
-auto: true
-server: true
-permalink: /:title
+# Site settings
+title: The Stanford ACM
+email: acm-officers @ lists.stanford.edu
+description: > # this means to ignore newlines until "baseurl:"
+  ACM brings together students with an interest in building cool things with CS.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://stanfordacm.com" # the base hostname & protocol for your site
+twitter_username:  stanfordacm
+facebook_username: stanfordacm
+
+# Build settings
+markdown: kramdown

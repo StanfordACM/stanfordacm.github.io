@@ -1,0 +1,231 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+  "utils"
+;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "syntax-highlighting"
+;
+
+/**
+ * The page content
+ */
+.page-content {
+  margin: 0 0 0 360px;
+  padding: 60px 180px 60px 120px;
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  section.info {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font: 27px/1.0 $mono-font-family;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: $red-color;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .event {
+    margin-bottom: 60px;
+
+    .headline {
+      span:first-child {
+        font: 27px/1.0 $mono-font-family;
+        font-weight: bold;
+      }
+
+      span:first-child:after {
+        content: "\00a0";
+      }
+
+      span:nth-child(2) {
+        font: 27px/1.0 $mono-font-family;
+        color: $grey-color;
+      }
+
+      span:nth-child(2):before {
+        content: "(";
+      }
+
+      span:nth-child(2):after {
+        content: ")";
+      }
+
+      p {
+        font: 20px/1.2 $mono-font-family;
+        margin: 10px 0;
+      }
+    }
+
+    .meta {
+      margin-bottom: 15px;
+      color: $grey-color;
+      font-family: $mono-font-family;
+      // font-weight: bold;
+      
+      .date, .time, .loc, .rsvp {
+        margin: 0 15px 0 0;
+        display: inline-block;
+      }
+
+      .rsvp a {
+        text-decoration: underline;
+        color: $grey-color;
+      }
+
+      .rsvp a:hover {
+        text-decoration: none;
+      }
+    }
+
+    .details {
+
+    }
+  }
+
+}
+
+/**
+ * Sidebar
+ */
+.sidebar-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $black-color;
+  width: 360px;
+  height: 100%;
+  padding: 80px 0;
+  font-family: $mono-font-family;
+}
+
+.sidebar-left .logo {
+  text-align: center;
+  // cursor: pointer;
+}
+
+.sidebar-left .title {
+  text-align: center;
+  margin: 15px auto 30px;
+  color: $grey-color;
+
+  h1 {
+    margin: 0 0 5px;
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 14.5px;
+  }
+}
+
+.sidebar-left .links {
+  a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    color: $grey-color;
+  }
+
+  a:hover {
+    color: $grey-color-light;
+  }
+
+  .selected {
+    color: $grey-color-light;
+  }
+}
+
+/**
+ * Making the sidebar responsive
+ */
+@media (max-width: 1200px) {
+  .page-content{
+    padding: 60px 120px 60px 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-content{
+    padding: 40px 80px 40px 80px;
+    max-width: none;
+    margin: 0;
+
+    h1 {
+      text-align: center;
+      font: 27px/1.0 $mono-font-family;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+
+  .sidebar-left {
+    width: auto;
+    height: auto;
+    position: inherit;
+    padding: 40px 0;
+  }
+
+  .sidebar-left .links {
+    text-align: center;
+    
+    a {
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+}
+
+/**
+ * Mobile phone layout
+ */
+@media (max-width: 600px) {
+  .page-content{
+    padding: 40px 20px 40px 20px;
+    max-width: none;
+    margin: 0;
+  }
+
+  .sidebar-left {
+    padding: 40px 0;
+  }
+}
