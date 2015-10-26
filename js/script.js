@@ -20,5 +20,9 @@
     }
   });
 
+  $(document).mousemove(function(e) {
+    $('svg.gear').css('transform', 'rotate('+((e.pageY/5)%360)+'deg)');
+  });
+
 })(this, this.document);
   
