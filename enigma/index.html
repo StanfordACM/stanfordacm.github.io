@@ -1,0 +1,70 @@
+---
+title: Enigma
+layout: enigma
+custom_css: enigma
+custom_js: enigma
+---
+<section>
+  <div class="load" id="load">
+    <svg class="centergear" id="gear" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path class="st0" d="M462,280.72v-49.44l-46.414-16.48c-3.903-15.098-9.922-29.343-17.675-42.447l0.063-0.064l21.168-44.473l-34.96-34.96
+      l-44.471,21.167l-0.064,0.064c-13.104-7.753-27.352-13.772-42.447-17.673L280.72,50h-49.44L214.8,96.415
+      c-15.096,3.9-29.343,9.919-42.447,17.675l-0.064-0.066l-44.473-21.167l-34.96,34.96l21.167,44.473l0.066,0.064
+      c-7.755,13.104-13.774,27.352-17.675,42.447L50,231.28v49.44l46.415,16.48c3.9,15.096,9.921,29.343,17.675,42.447l-0.066,0.064
+      l-21.167,44.471l34.96,34.96l44.473-21.168l0.064-0.063c13.104,7.753,27.352,13.771,42.447,17.675L231.28,462h49.44l16.48-46.414
+      c15.096-3.903,29.343-9.922,42.447-17.675l0.064,0.063l44.471,21.168l34.96-34.96l-21.168-44.471l-0.063-0.064
+      c7.753-13.104,13.771-27.352,17.675-42.447L462,280.72z M256,338.4c-45.509,0-82.4-36.892-82.4-82.4c0-45.509,36.891-82.4,82.4-82.4
+      c45.509,0,82.4,36.891,82.4,82.4C338.4,301.509,301.509,338.4,256,338.4z"/>
+    </svg>
+    <svg class="centercircle" id="centercircle" width="150" height="150">
+      <path class="loadercircle" stroke="#00cc77" stroke-width="10px" d="M0,70a70,70 0 1,0 140,0a70,70 0 1,0 -140,0">
+    </svg>
+  </div>
+  <div class="background"></div>
+  <h1 class="headline">
+  <svg class="gear" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="80px" height="80px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+  <path class="st0" d="M462,280.72v-49.44l-46.414-16.48c-3.903-15.098-9.922-29.343-17.675-42.447l0.063-0.064l21.168-44.473l-34.96-34.96
+    l-44.471,21.167l-0.064,0.064c-13.104-7.753-27.352-13.772-42.447-17.673L280.72,50h-49.44L214.8,96.415
+    c-15.096,3.9-29.343,9.919-42.447,17.675l-0.064-0.066l-44.473-21.167l-34.96,34.96l21.167,44.473l0.066,0.064
+    c-7.755,13.104-13.774,27.352-17.675,42.447L50,231.28v49.44l46.415,16.48c3.9,15.096,9.921,29.343,17.675,42.447l-0.066,0.064
+    l-21.167,44.471l34.96,34.96l44.473-21.168l0.064-0.063c13.104,7.753,27.352,13.771,42.447,17.675L231.28,462h49.44l16.48-46.414
+    c15.096-3.903,29.343-9.922,42.447-17.675l0.064,0.063l44.471,21.168l34.96-34.96l-21.168-44.471l-0.063-0.064
+    c7.753-13.104,13.771-27.352,17.675-42.447L462,280.72z M256,338.4c-45.509,0-82.4-36.892-82.4-82.4c0-45.509,36.891-82.4,82.4-82.4
+    c45.509,0,82.4,36.891,82.4,82.4C338.4,301.509,301.509,338.4,256,338.4z"/>
+  </svg>
+  </h1>
+
+  <a href="/" class="acm"><img src="http://addisonleong.com/images/ACM/ACMLogo.png"></a>
+
+  <h1>
+    ACM <a>ENIGMA PUZZLEHUNT</a> 2015
+  </h1> 
+  
+  <h3> 
+    Something's gone very wrong... Karel the Robot has gone missing! Join the search effort <b>3-7PM, November 14th, 2015</b>. The search begins at the Stanford Oval.
+  </h3>
+
+  <h3 class="hint">
+    [Puzzlehunt set in Stanford campus to test your logic riddle and mystery solving skills! Dinner will be provided.]
+  </h3>
+  <div class="center">
+    <a href="https://sydney35.typeform.com/to/crqPUZ" class="button">REGISTER</a>
+    <h3 class="small">in teams of 1-4!</h3>
+  </div>
+  <script>
+    document.getElementById("gear").style.left = document.getElementById("gear").offsetLeft - 50 + "px";
+    document.getElementById("gear").style.top = document.getElementById("gear").offsetTop - 50 + "px";
+    document.getElementById("centercircle").style.left = document.getElementById("centercircle").offsetLeft - 75 + "px";
+    document.getElementById("centercircle").style.top = document.getElementById("centercircle").offsetTop - 75 + "px";
+    setTimeout(function() {
+      document.getElementById("load").style.opacity = 0;
+      
+    }, 1000);
+    setTimeout(function() {
+        document.getElementById("load").style.visibility = "hidden";
+      }, 1500);
+  </script>
+
+</section>
