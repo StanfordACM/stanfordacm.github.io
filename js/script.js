@@ -21,7 +21,7 @@
   });
   
   $(document).mousemove(function(e) {
-    $('svg.gear').css('transform', 'rotate('+((e.pageY/5)%360)+'deg)');
+    $('svg.gear').css('transform', 'rotate('+(((e.pageX/5)%360)+((e.pageY/5)%360))+'deg)');
   });
 
 })(this, this.document);
