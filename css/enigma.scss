@@ -35,6 +35,10 @@ body {
   }
 }
 
+.header {
+  padding-top: 50px !important;
+}
+
 .background {
   position: absolute;
   width: 100vw;
@@ -159,10 +163,6 @@ a {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.header {
-  padding-top: 50px;
 }
 
 @keyframes rotate {
