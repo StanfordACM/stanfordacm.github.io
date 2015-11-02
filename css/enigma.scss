@@ -155,6 +155,10 @@ a {
   color: #00cc77 !important;
 }
 
+.wrap {
+  90vw;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -188,6 +192,9 @@ a {
   }
   .hint {
     font-size: 17px;
+  }
+  .wrap {
+    width: 100%;
   }
 }
 
