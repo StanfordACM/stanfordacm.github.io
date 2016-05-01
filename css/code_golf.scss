@@ -1,0 +1,23 @@
+---
+---
+@charset "utf-8";
+
+@import
+  "utils"
+;
+
+.page-content {
+  .contest {
+    width: 100%;
+    font-family: $mono-font-family;
+
+    a {
+      font-size:20px;
+    }
+
+    code {
+      font-size:12px;
+    }
+  }
+
+}
