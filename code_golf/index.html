@@ -22,12 +22,18 @@ custom_css: code_golf
     <a href="http://goo.gl/forms/JcI47sgFR5">Week 5, Spring 2016</a><br />
     <span>Winner: Yu Yan (91 chars)</span><br />
     <code>
-function b(s){for(var t;s!=t;t=s,s=s.replace(/[^()\[\]<>{}]|\(\)|\[\]|<>|{}/,''));return!s}
-    </code><br />
+    def f(s):
+      import re;t=re.sub('[^\[\]()<>{}]','',s);r=''
+      while r!=t:
+        r=t
+        for i in('()','{}','[]','<>'):
+          while t.find(i)>=0:t=t.replace(i,'')
+      return t==''
+    </code><br /><br />
     <a href="http://goo.gl/forms/R4ilcHkpG2">Week 4, Spring 2016</a><br />
     <span>Winner: Andrew Duffy (99 chars)</span><br />
     <code>
-function f(r){t={};a=arguments;for(i in a)for (k in a[i]){o=a[i][k];t[k]=t[k]?r(t[k],o):o};return t}
+    function f(r){t={};a=arguments;for(i in a)for (k in a[i]){o=a[i][k];t[k]=t[k]?r(t[k],o):o};return t}
     </code>
   </div>
   
