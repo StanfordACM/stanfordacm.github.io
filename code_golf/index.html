@@ -26,7 +26,7 @@ custom_css: code_golf
     <a>Week 4, Spring 2016</a><br />
     Write a function which takes another function f and a variable number of javascript objects. Return an object that consists of the rest of the objects merged onto the first. If a key occurs in more than one object, apply f to the values of the remaining objects if their keys match. None of the keys will have the value undefined.<br />
     <span>Winner: Andrew Duffy (99 chars)</span><br />
-    <code>function b(s){for(var t;s!=t;t=s,s=s.replace(/[^()\[\]<>{}]|\(\)|\[\]|<>|{}/,''));return!s}</code>
+    <code>function f(r){t={};a=arguments;for(i in a)for(k in a[i]){o=a[i][k];t[k]=t[k]?r(t[k],o):o};return t}</code>
   </div>
   
 </section>
