@@ -22,7 +22,7 @@ custom_css: code_golf
     <a>Week 5, Spring 2016</a><br />
     Write a function which takes a string and returns true or false according to whether the bracketing operators in an expression are properly nested. Bracketing operators include parentheses, square brackets, angle brackets aka less/greater-than, and curly braces. The string may also contain characters other than the bracketing operators.<br />
     <span>Winner: Yu Yan (91 chars)</span><br />
-    <code>function b(s){for(var t;s!=t;t=s,s=s.replace(/[^()\[\]<>{}]|\(\)|\[\]|<>|{}/,''));return!s}</code><br />
+    <code>function b(s){for(var t;s!=t;t=s,s=s.replace(/[^()\[\]<>{}]|\(\)|\[\]|<>|{}/,''));return!s}</code><br /><br />
     
     <a>Week 4, Spring 2016</a><br />
     Write a function which takes another function f and a variable number of javascript objects. Return an object that consists of the rest of the objects merged onto the first. If a key occurs in more than one object, apply f to the values of the remaining objects if their keys match. None of the keys will have the value undefined.<br />
