@@ -24,13 +24,19 @@
     text-align: center;
   }
 
+  .initiatives {
+    p {
+      font-size: 16px;
+    }
+  }
+
   .officer {
     display: inline-block;
     height: 60px;
     width: 155px;
     text-align: center;
     padding: 10px;
-    font-family: $base-font-family;
+    font-family: $mono-font-family;
     // border: 1px solid red;
 
     p {
