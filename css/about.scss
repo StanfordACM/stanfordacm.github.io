@@ -24,12 +24,6 @@
     text-align: center;
   }
 
-  .initiatives {
-    p {
-      font-size: 16px;
-    }
-  }
-
   .officer {
     display: inline-block;
     height: 60px;
@@ -37,7 +31,6 @@
     text-align: center;
     padding: 10px;
     font-family: $mono-font-family;
-    // border: 1px solid red;
 
     p {
       margin: 0;
