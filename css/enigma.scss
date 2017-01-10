@@ -21,8 +21,8 @@
 }
 
 body {
-  background: #000000;
-  overflow: hidden;
+  width: 100%;
+  overflow: scroll;
 }
 
 .page-content {
@@ -31,214 +31,89 @@ body {
   .hint {
     color: $grey-color;
   }
-  path.st0{
-    fill: #00cc77;
-  }
 }
 
-.header {
-  padding-top: 50px !important;
+img {
+  margin: 20px auto;
+  text-align: center;
+  display: block;
 }
 
-.background {
-  position: absolute;
+.mask {
   width: 100vw;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  background: url(http://addisonleong.com/images/ACM/ACMBackground.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-  -moz-filter: brightness(50%);
 }
 
 h1 {
-  color: #dddddd;
-  font-family: "Work Sans", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
   font-size: 50px !important;
+  padding-top: 15px;
+  margin-bottom: 15px !important;
 }
 
-h3 {
-  color: #dddddd;
-  font-family: "Work Sans", sans-serif;
-  font-size: 30px;
-}
-
-.hint {
-  color: #cccccc !important;
-  font-family: "Work Sans", sans-serif;
-  font-size: 25px;
+h2 {
+  color: #333333;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
 }
 
 .button {
-  border: 3px solid #00cc77;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid #333333;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
   padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  margin: 10px;
-  font: 27px/1.0 "Work Sans", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: 400;
+  margin: 15px auto;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .button:hover {
-  background: #00cc77;
-  color: #000000 !important;
-  text-decoration: none !important;
-  cursor: pointer !important;
-}
-
-.center {
-  text-align: center;
-  margin-top: 50px;
-  bottom: 30px;
-}
-
-.small {
-  font-family: "Work Sans", sans-serif !important;
-  font-size: 20px;
-  margin-top: 15px;
-}
-
-.load {
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  position: absolute;
-  background: #000000;
-  left: 0;
-  top: 0;
-  transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-}
-
-.centergear {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: rotate 1.5s linear;
-  z-index: 1;
-}
-
-.centercircle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-}
-
-.loadercircle {
-  transform: translate(5px, 5px);
-  -moz-transform: translate(5px, 5px);
-  -webkit-transform: translate(5px, 5px);
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: load 2.5s linear;
-}
-
-.acm {
-  position: absolute;
-  width: 50px;
-  top: 30px;
-  opacity: 0.5;
-}
-
-.acm:hover {
-  opacity: 1;
+  background: #333333;
+  color: #ffffff;
 }
 
 a {
-  color: #00cc77 !important;
+  text-decoration: none !important;
 }
 
-.wrap {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-    -moz-transform: rotate(0);
-    -webkit-transform: rotate(0);
-  }
-  50% {
-    transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-  }
+.detail-item {
+  display: inline-block;
+  width: 30%;
 }
 
-@keyframes load {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+.line {
+  width: 2px;
+  height: auto;
+  background: #333333;
+  vertical-align: middle;
+  margin: 0 30px;
 }
 
-@media screen and (max-width: 700px) {
-  h3 {
-    font-size: 20px;
-  }
-  .hint {
-    font-size: 17px;
-  }
-  .wrap {
-    width: 95%;
-  }
+.detail-item.left {
+  text-align: right;
 }
 
-@media screen and (max-height: 600px) {
-  h3 {
-    font-size: 20px;
-  }
-  .hint {
-    font-size: 17px;
-  }
-  .center {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  h1 {
-    font-size: 30px !important;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  .summary {
-    display: none;
-  }
-  .hint {
-    font-size: 17px;
-  }
-  .gear {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-  }
-  .page-content {
-    padding-top: 10px;
-  }
-  .headline {
-    margin-bottom: 10px !important;
-  }
+.detail-item.right {
+  text-align: left;
 }
