@@ -23,6 +23,8 @@
 body {
   width: 100%;
   overflow: scroll;
+  background-color: #1F0954;
+  color: #FEFEFE;
 }
 
 .page-content {
@@ -50,7 +52,7 @@ img {
 }
 
 h1 {
-  color: #333333;
+  color: #09DF95;
   text-transform: uppercase;
   font-size: 50px !important;
   padding-top: 15px;
@@ -58,7 +60,7 @@ h1 {
 }
 
 h2 {
-  color: #333333;
+  color: #09DF95;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
@@ -70,9 +72,9 @@ h2 {
   width: 100px;
   height: 35px;
   border-radius: 5px;
-  border: 2px solid #333333;
+  border: 2px solid #FEFEFE;
   text-align: center;
-  color: #333333;
+  color: #09DF95;
   text-transform: uppercase;
   padding-top: 10px;
   font-weight: 400;
@@ -82,11 +84,11 @@ h2 {
 }
 
 .button:hover {
-  background: #333333;
-  color: #ffffff;
+  border: 2px solid #F2643E;
 }
 
-a {
+.page-content a {
+  color: #09DF95;
   text-decoration: none !important;
 }
 
@@ -105,7 +107,7 @@ a {
 .line {
   width: 2px;
   height: auto;
-  background: #333333;
+  background: #FEFEFE;
   vertical-align: middle;
   margin: 0 30px;
 }
