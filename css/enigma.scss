@@ -51,18 +51,22 @@ body {
     border-radius: 5px;
     border: 2px solid #FEFEFE;
     text-align: center;
-    color: #FEFEFE;
     text-transform: uppercase;
     padding-top: 10px;
     font-weight: 400;
     margin: 15px auto;
     text-decoration: none !important;
     cursor: pointer;
+    a {
+      color: #FEFEFE;
+    }
   }
 
   .button:hover {
     background-color: #FEFEFE;
-    color: #1F0954;
+    a {
+      color: #1F0954;
+    }
   }
 }
 
