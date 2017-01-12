@@ -25,6 +25,7 @@ body {
   overflow: scroll;
   background-color: #1F0954;
   color: #FEFEFE;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page-content {
@@ -49,6 +50,10 @@ img {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
 }
 
 h1 {
