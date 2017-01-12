@@ -41,19 +41,20 @@ body {
   }
 
   a {
-    color: #F2643E;
+    color: #e71b5e;
     text-decoration: none !important;
   }
 
   .button {
-    width: 100px;
-    height: 35px;
+    width: 150px;
+    height: 2em;
     border-radius: 5px;
     border: 2px solid #FEFEFE;
     text-align: center;
     text-transform: uppercase;
     padding-top: 10px;
     font-weight: 400;
+    font-size: x-large;
     margin: 15px auto;
     text-decoration: none !important;
     cursor: pointer;
@@ -118,7 +119,7 @@ h2 {
 .line {
   width: 2px;
   height: auto;
-  background: #FEFEFE;
+  background: #e71b5e;
   vertical-align: middle;
   margin: 0 30px;
 }
