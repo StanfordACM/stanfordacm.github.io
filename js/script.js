@@ -15,13 +15,19 @@
       $('.sidebar-left .links a[name="home"]').toggleClass('selected');
     } else if (path === '/about/') {
       $('.sidebar-left .links a[name="about"]').toggleClass('selected');
+    } else if (path === '/events/') {
+      $('.sidebar-left .links a[name="events"]').toggleClass('selected');
     } else if (path === '/contact/') {
       $('.sidebar-left .links a[name="contact"]').toggleClass('selected');
     } else if (path === '/officers/') {
       $('.sidebar-left .links a[name="officers"]').toggleClass('selected');
     } else if (path === '/sponsors/') {
       $('.sidebar-left .links a[name="sponsors"]').toggleClass('selected');
-    }
+    } else if (path === '/mlab/') {
+      $('.sidebar-left .links a[name="mlab"]').toggleClass('selected');
+    } else if (path === '/proco/' || path.includes("/proco/")) {
+      $('.sidebar-left .links a[name="proco"]').toggleClass('selected');
+    } 
   });
 
   $(document).mousemove(function(e) {
