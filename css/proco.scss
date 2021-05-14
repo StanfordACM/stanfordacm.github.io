@@ -38,4 +38,24 @@
         color: rgb(46, 43, 235);
     }
 
+    .sponsor-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            width: 48%;
+            height: 50%;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .sponsor-row {
+            flex-wrap: wrap;
+            img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
 }
