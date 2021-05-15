@@ -38,14 +38,27 @@
         color: rgb(46, 43, 235);
     }
 
+    .sponsors {
+        p {
+            font-size: smaller;
+        }
+    }
+
     .sponsor-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        img {
-            width: 48%;
-            height: 50%;
+        a {
+            height: 200px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
         }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        margin-bottom: 20px;
     }
 
     @media (max-width: 992px) {
