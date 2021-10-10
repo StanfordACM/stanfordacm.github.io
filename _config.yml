@@ -1,6 +1,6 @@
 # Site settings
 title: The Stanford ACM
-email: acm-officers @ lists.stanford.edu
+email: acm-members-owners @ lists.stanford.edu
 description: > # this means to ignore newlines until "baseurl:"
   ACM brings together students with an interest in building cool things with computer science.
 baseurl: "" # the subpath of your site, e.g. /blog/
