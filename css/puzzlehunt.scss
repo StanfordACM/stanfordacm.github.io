@@ -1,0 +1,176 @@
+---
+---
+@charset "utf-8";
+
+@import
+  "utils"
+;
+@import url(https://fonts.googleapis.com/css?family=Museo+Sans:400,700);
+
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+body {
+  width: 100%;
+  overflow: scroll;
+  background-color: white;
+  color: #111;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 16px;
+}
+
+.page-content {
+  margin: 0;
+  padding: 0px !important;
+  .hint {
+    color: $grey-color;
+  }
+
+  h1, h2, h3 {
+    color: #376caa;
+    font-size: 1.75em;
+    font-weight: 500;
+    font-family: 'Museo Sans', sans-serif;
+    margin-bottom: 0.2em;
+  }
+
+  .slogan {
+    font-family: "Museo Sans";
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+
+  a {
+    color: #e71b5e;
+    text-decoration: none !important;
+  }
+
+  .button-holder {
+    text-align: center;
+    margin: 2em auto 0em auto;
+  }
+
+  .button {
+    border-radius: 5px;
+    // border: 2px solid #4a4a4a;
+    text-align: center;
+    // text-transform: uppercase;
+    padding: 0.3em;
+    font-weight: 400;
+    font-size: 3em;
+    background-color: #4b65d4;
+    cursor: pointer;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #5b75c1;
+    // transition: 0.15s ease-out;
+    a {
+      color: #1F0954;
+    }
+  }
+
+  .black-panel {
+    // background-color: black;
+    background: linear-gradient(217deg, #e32527, 30%, #4852be);
+    color: white;
+
+    :hover {
+      opacity: 0.8;
+    }
+  }
+
+  .stanford-acm-presents {
+    font-size: 3em;
+    font-family: "Museo Sans";
+    text-align: center;
+    padding: 0.5em;
+    line-height: 1em;
+  }
+
+  .top-panel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+
+    img {
+      margin: 20px auto 50px auto;
+      // text-align: center;
+      display: block;
+    }
+
+    .info {
+      font-size: 2em;
+      font-family: Museo Sans;
+      text-align: left;
+      margin-left: 25px;
+    }
+
+
+  }
+}
+
+
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+h1 {
+  color: #FEFEFE;
+  text-transform: uppercase;
+  font-size: 50px !important;
+  padding-top: 15px;
+  margin-bottom: 15px !important;
+}
+
+h2 {
+  color: #FEFEFE;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.detail-item {
+  display: inline-block;
+  width: 30%;
+  max-width: 400px;
+}
+
+.line {
+  width: 2px;
+  height: auto;
+  background: #e71b5e;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+
+.detail-item.left {
+  text-align: right;
+}
+
+.detail-item.right {
+  text-align: left;
+}
