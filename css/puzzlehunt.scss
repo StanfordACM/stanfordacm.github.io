@@ -100,12 +100,14 @@ body {
     flex-direction: column;
     text-align: center;
     width: 500px;
+    max-width: 95vw;
     margin: 0 auto;
 
     img {
       margin: 20px auto 50px auto;
       // text-align: center;
       display: block;
+      width: 100%;
     }
 
     .info {
@@ -153,6 +155,9 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  @include media-query(500px) {
+    flex-direction: column;
+  }
 }
 
 .detail-item {
@@ -160,6 +165,11 @@ h2 {
   width: 30%;
   max-width: 400px;
   font-size: 1.2em;
+  flex-shrink: 0;
+  @include media-query(500px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .line {
@@ -172,6 +182,9 @@ h2 {
 
 .detail-item.left {
   text-align: right;
+  @include media-query(500px) {
+    text-align: left;
+  }
 }
 
 .detail-item.right {
