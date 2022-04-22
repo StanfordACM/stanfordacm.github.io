@@ -5,7 +5,8 @@
 @import
   "utils"
 ;
-@import url(https://fonts.googleapis.com/css?family=Museo+Sans:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Museo+Sans:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;700;800&display=swap');
 
 
 @mixin media-query($device) {
@@ -19,7 +20,7 @@ body {
   overflow: scroll;
   background-color: white;
   color: #111;
-  font-family: 'Museo Sans', sans-serif;
+  font-family: 'Mukta', sans-serif;
   font-size: 16px;
 }
 
@@ -34,12 +35,12 @@ body {
     color: #376caa;
     font-size: 1.75em;
     font-weight: 500;
-    font-family: 'Museo Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
     margin-bottom: 0.2em;
   }
 
   .slogan {
-    font-family: "Museo Sans";
+    font-family: "Mukta";
     font-size: 3em;
     line-height: 1.2em;
   }
@@ -51,7 +52,7 @@ body {
 
   .button-holder {
     text-align: center;
-    margin: 2em auto 0em auto;
+    margin: 2em auto 2em auto;
   }
 
   .button {
@@ -65,6 +66,7 @@ body {
     background-color: #4b65d4;
     cursor: pointer;
     color: white;
+
   }
 
   .button:hover {
@@ -87,7 +89,7 @@ body {
 
   .stanford-acm-presents {
     font-size: 3em;
-    font-family: "Museo Sans";
+    font-family: "Mukta";
     text-align: center;
     padding: 0.5em;
     line-height: 1em;
@@ -150,13 +152,14 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .detail-item {
   display: inline-block;
   width: 30%;
   max-width: 400px;
+  font-size: 1.2em;
 }
 
 .line {
