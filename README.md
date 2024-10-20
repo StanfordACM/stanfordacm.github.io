@@ -1,3 +1,5 @@
+# This repository is no longer used, please go to [this repo](https://github.com/StanfordACM/Stanford-ACM) for the most up to date website.
+
 MIT License
 ------------
 
